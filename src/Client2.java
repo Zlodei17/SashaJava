@@ -7,6 +7,7 @@ public class Client2 {
         System.out.println(client.getClass());
         int i = client.hashCode();
         System.out.println(i);
+//        ws
         try {
             Socket socket = new Socket("127.0.0.1",8000);
             BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(System.in));
