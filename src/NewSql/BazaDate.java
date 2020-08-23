@@ -38,7 +38,7 @@ public class BazaDate {
     }
     public void getTable(String table) throws SQLException, ClassNotFoundException{
         //String sql = "SELECT * FROM "+ table + " WHERE `id`<>1" ;
-        String sql = "SELECT * FROM "+ table + " WHERE `prezzo` LIKE '%5%' or `id`=1" ;
+        String sql = "SELECT * FROM "+ table + " WHERE `prezzo` LIKE '%50%' or `id`=1" ;
 
         Statement statement = getDbConection().createStatement();
         ResultSet res = statement.executeQuery(sql);//vibiraem danie
